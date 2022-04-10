@@ -18,7 +18,18 @@ export const Showcase = () => {
         </div>
         <div className="showcase-form card">
           <h2>Request a Demo</h2>
-          <form>
+          <form
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="hidden">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
             <div className="form-control">
               <input type="text" name="name" placeholder="Name" required />
             </div>
