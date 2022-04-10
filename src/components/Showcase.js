@@ -18,7 +18,7 @@ export const Showcase = () => {
         </div>
         <div className="showcase-form card">
           <h2>Request a Demo</h2>
-          <form>
+          <form action="/thankyou">
             <div className="form-control">
               <input type="text" name="name" placeholder="Name" required />
             </div>
@@ -33,9 +33,7 @@ export const Showcase = () => {
             <div className="form-control">
               <input type="email" name="email" placeholder="Email" required />
             </div>
-            <link className="btn btn-primary" to="/thankyou">
-              Send
-            </link>
+            <input type="submit" className="btn btn-primary" value="Send" />
           </form>
         </div>
       </div>
