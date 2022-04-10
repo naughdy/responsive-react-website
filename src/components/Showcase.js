@@ -23,6 +23,7 @@ export const Showcase = () => {
             method="POST"
             netlify-honeypot="bot-field"
             data-netlify="true"
+            action="/thankyou"
           >
             <input type="hidden" name="form-name" value="contact" />
             <p className="hidden">
